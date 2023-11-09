@@ -1,0 +1,26 @@
+/* styles.css */
+.navbar {
+    background-color: #006837; /* Green background color */
+    color: #ffffff; /* White text color */
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 1000; /* Ensure the Navbar is above other content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  }
+  
+  .navbar a {
+    color: #ffffff; /* White link color */
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+
+  /* Other styles for your links, buttons, and content can be added here */
+  

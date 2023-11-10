@@ -1,6 +1,8 @@
 /* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;1,300&display=swap');
+
 .navbar {
-    background-color: #006837; /* Green background color */
+    background-color: rgb(116,130,184); /* Green background color */
     color: #ffffff; /* White text color */
     padding: 10px 0;
     position: fixed;
@@ -10,6 +12,8 @@
     height: 60px;
     z-index: 1000; /* Ensure the Navbar is above other content */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    display: absolute;
+    justify-content: space-between;
   }
   
   .navbar a {
@@ -22,5 +26,17 @@
     text-decoration: underline;
   }
 
+.logo-image {
+  max-width: 100%; /* Make the image responsive */
+  height: 110px; /* Maintain aspect ratio */
+  position: relative;
+  padding-right: 145px;
+  padding-bottom: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-right: 10px; /* Add some margin for separation */
+  margin-top: -5px;
+}
   /* Other styles for your links, buttons, and content can be added here */
   

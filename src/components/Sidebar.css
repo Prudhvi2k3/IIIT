@@ -1,5 +1,5 @@
 .sidebar {
-    background-color: rgba(60, 158, 112, 0); /* Green background color with transparency */
+    background-color: rgba(169,216,221, 0.5); /* Green background color with transparency */
     color: #ffffff; /* White text color */
     padding: 10px;
     position: fixed;
@@ -23,7 +23,8 @@
     color: #ffffff;
     cursor: pointer;
     position: fixed;
-    top: 24px;
+    top: 14px;
+    left: 10px;
   }
 
   .toggle-button {
@@ -38,7 +39,7 @@
   }
   
   .sidebar {
-    background-color: #006837; /* Green background color */
+    background-color: (135,190,212); /* Green background color */
     color: #ffffff; /* White text color */
     padding: 10px 0;
     position: fixed;

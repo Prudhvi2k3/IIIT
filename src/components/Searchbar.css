@@ -2,13 +2,13 @@
 
 /* Update the CSS for the SearchBar */
 .search-bar {
-    display: flex;
-    background-color: #ffffff; /* White background color */
-    border-radius: 20px; /* Rounded corners */
-    padding: 8px 12px;
-    margin: 15px 10px 10px auto; /* Center the SearchBar horizontally and move it down slightly */
-    width: 218px; /* Adjust the width as needed */
-  }
+  display: flex;
+  background-color: #ffffff; /* White background color */
+  border-radius: 20px; /* Rounded corners */
+  padding: 8px 12px;
+  margin: 5px 10px 10px auto; /* Center the SearchBar horizontally and move it down slightly */
+  width: 150px; /* Adjust the width as needed */
+}
   
   .search-bar input {
     border: none;

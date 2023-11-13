@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { PieChart } from '@mui/x-charts/PieChart';
+import './Piecharts.css';
 
 // Pie Chart 1: Renewable Energy Share in Global Electricity Generation
 const renewableEnergyData = [
@@ -12,7 +13,7 @@ const renewableEnergyData = [
 
 // Pie Chart 2: Top 5 Sources of Greenhouse Gas Emissions
 const greenhouseGasData = [
-  { id: 0, value: 25, label: 'Electricity and heat' },
+  { id: 0, value: 25, label: 'Electricity' },
   { id: 1, value: 24, label: 'Agriculture' },
   { id: 2, value: 21, label: 'Industry' },
   { id: 3, value: 14, label: 'Transport' },
@@ -37,7 +38,7 @@ const waterWithdrawalsData = [
 
 export default function PieCharts() {
   return (
-    <div>
+    <div className='pie-charts-container'>
       <PieChart
         series={[
           {
@@ -47,6 +48,7 @@ export default function PieCharts() {
           },
         ]}
         height={200}
+        className="pie-chart"
       />
       <PieChart
         series={[

@@ -23,11 +23,11 @@ const CustomPieChart = ({ title, data, height }) => {
 
 // Pie Chart 1: Renewable Energy Share in Global Electricity Generation
 const renewableEnergyData = [
-  { id: 0, value: 3, label: 'Solar' },
+  { id: 0, value: 30, label: 'Solar' },
   { id: 1, value: 10, label: 'Wind' },
-  { id: 2, value: 16, label: 'Hydropower' },
-  { id: 3, value: 0.2, label: 'Geothermal' },
-  { id: 4, value: 2, label: 'Other' },
+  { id: 2, value: 32, label: 'Hydropower' },
+  { id: 3, value: 20, label: 'Geothermal' },
+  { id: 4, value: 8, label: 'Other' },
 ];
 
 // Pie Chart 2: Top 5 Sources of Greenhouse Gas Emissions

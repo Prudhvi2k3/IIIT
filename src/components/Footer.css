@@ -14,12 +14,9 @@
   }
   
   .company-name {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
-  }
-  
-  .github-mail {
-    font-size: 14px;
+    padding-left: 20px;
   }
   
   .copyright {
@@ -27,3 +24,22 @@
     font-size: 12px;
   }
   
+  .social-link {
+    margin-right: 15px; /* Adjust spacing between social icons */
+  }
+  
+  .social-logo {
+    width: 30px; /* Adjust the width as needed */
+    height: auto;
+  }
+
+  .mail-logo{
+    height: auto;
+    width: 38px;
+    margin-bottom: -4px;
+  }
+  .insta-logo{
+    height: auto;
+    width: 38px;
+    margin-bottom: -4px;
+  }

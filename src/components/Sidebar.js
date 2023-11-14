@@ -11,6 +11,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
     <div className={`sidebar ${isOpen ? 'open' : ''} ${isMobile ? 'mobile' : ''} ${isTablet ? 'tablet' : ''}`} >
         <div className="sidebar-content">
         <div className="sidebar-link"><a href="#home">Home</a></div>
+        <div className="sidebar-link"><a href="#cards">Cards</a></div>
         <div className="sidebar-link"><a href="#analytics">Aanlytics</a></div>
         <div className="sidebar-link"><a href="#data">Data</a></div>
         <div className="sidebar-link"><a href="#form">Form</a></div>

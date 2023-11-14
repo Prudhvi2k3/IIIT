@@ -5,6 +5,7 @@ import contentImage from '../assets/content.png';
 
 const Mission = () => {
   return (
+    <section id='home'>
     <div className="mission-container">
       <div className="mission-text">
         <h2>Our Mission</h2>
@@ -24,6 +25,7 @@ const Mission = () => {
         <img src={contentImage} alt="Environmental Conservation" />
       </div>
     </div>
+    </section>
   );
 };
 

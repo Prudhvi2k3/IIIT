@@ -10,7 +10,8 @@ import forest from '../assets/forest.png';
 
 const Cards = () => {
   return (
-    <section className='home'>
+    <section id='home'>
+      <h1 align='center'>Cards</h1>
     <section className="hero-section">
       <div className="card-grid">
         <a className="card">

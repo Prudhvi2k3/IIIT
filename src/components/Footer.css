@@ -1,0 +1,29 @@
+/* Footer.css */
+
+.footer {
+    background-color:  rgb(116,130,184);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .company-name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .github-mail {
+    font-size: 14px;
+  }
+  
+  .copyright {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  

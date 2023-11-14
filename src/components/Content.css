@@ -6,7 +6,7 @@
     align-items: center;
     padding: 2em;
     margin-top: 80px;
-    margin-left: 90px;
+    margin-left: 20px;
     margin-bottom: 45px;
     font-size: 20px;
   }
@@ -18,7 +18,9 @@
   .mission-image img {
     max-width: 100%;
     height: auto;
-    width: 400px;
+    width: 450px;
+    padding-left: 20px;
+    margin-left: -20px;
   }
   
   /* Adjust layout for medium-sized screens */

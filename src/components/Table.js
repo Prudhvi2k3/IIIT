@@ -3,6 +3,7 @@ import './Table.scss';
 
 const WildlifeConservationTable = () => {
   return (
+    <section id='data'>
     <div className="container">
       <table className="responsive-table">
         <caption>Wildlife Conservation Data</caption>
@@ -101,6 +102,7 @@ const WildlifeConservationTable = () => {
         </tbody>
       </table>
     </div>
+    </section>
   );
 };
 

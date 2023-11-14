@@ -1,6 +1,25 @@
-import * as React from 'react';
+import React from 'react';
 import { PieChart } from '@mui/x-charts/PieChart';
 import './Piecharts.css';
+
+const CustomPieChart = ({ title, data, height }) => {
+  return (
+    <div className="pie-chart-container">
+      <h2 className="chart-heading">{title}</h2>
+      <PieChart
+        series={[
+          {
+            data,
+            highlightScope: { faded: 'global', highlighted: 'item' },
+            faded: { innerRadius: 30, additionalRadius: -30, color: 'gray' },
+          },
+        ]}
+        height={height}
+        className="pie-chart"
+      />
+    </div>
+  );
+};
 
 // Pie Chart 1: Renewable Energy Share in Global Electricity Generation
 const renewableEnergyData = [
@@ -38,48 +57,14 @@ const waterWithdrawalsData = [
 
 export default function PieCharts() {
   return (
-    <div className='pie-charts-container'>
-      <PieChart
-        series={[
-          {
-            data: renewableEnergyData,
-            highlightScope: { faded: 'global', highlighted: 'item' },
-            faded: { innerRadius: 30, additionalRadius: -30, color: 'gray' },
-          },
-        ]}
-        height={200}
-        className="pie-chart"
-      />
-      <PieChart
-        series={[
-          {
-            data: greenhouseGasData,
-            highlightScope: { faded: 'global', highlighted: 'item' },
-            faded: { innerRadius: 30, additionalRadius: -30, color: 'gray' },
-          },
-        ]}
-        height={200}
-      />
-      <PieChart
-        series={[
-          {
-            data: landCoverData,
-            highlightScope: { faded: 'global', highlighted: 'item' },
-            faded: { innerRadius: 30, additionalRadius: -30, color: 'gray' },
-          },
-        ]}
-        height={200}
-      />
-      <PieChart
-        series={[
-          {
-            data: waterWithdrawalsData,
-            highlightScope: { faded: 'global', highlighted: 'item' },
-            faded: { innerRadius: 30, additionalRadius: -30, color: 'gray' },
-          },
-        ]}
-        height={200}
-      />
-    </div>
+    <section id='analytics'>
+      <h1 align='center'>Pie Charts</h1>
+      <div className='pie-charts-container'>
+        <CustomPieChart title="Renewable Energy Share" data={renewableEnergyData} height={200} />
+        <CustomPieChart title="Greenhouse Gas Emissions" data={greenhouseGasData} height={200} />
+        <CustomPieChart title="Global Land Cover" data={landCoverData} height={200} />
+        <CustomPieChart title="Global Water Withdrawals" data={waterWithdrawalsData} height={200} />
+      </div>
+    </section>
   );
 }

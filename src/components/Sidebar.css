@@ -60,7 +60,7 @@
   }
   
   .sidebar-link a {
-    color: #ffffff; /* White link color */
+    color: black;
     text-decoration: none;
     font-size: 18px;
   }
@@ -73,7 +73,7 @@
     background-color: transparent;
     border: none;
     font-size: 24px;
-    color: #ffffff;
+    color: black;
     cursor: pointer;
     position: absolute;
     top: 10px;

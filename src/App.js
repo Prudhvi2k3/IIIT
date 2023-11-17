@@ -6,6 +6,7 @@ import Searchbar from './components/Searchbar';
 import Content from './components/Content';
 import Table from './components/Table';
 import Footer from './components/Footer';
+import Form from './components/Form';
 import './App.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
     <Card />
     <PieChart />
     <Table />
+    <Form />
     <Footer/>
     </>
   );

@@ -5,6 +5,7 @@ const WildlifeConservationTable = () => {
   return (
     <section id='data'>
     <div className="container">
+      <h1>Table Data</h1>
       <table className="responsive-table">
         <caption>Wildlife Conservation Data</caption>
         <thead>

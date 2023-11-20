@@ -1,16 +1,18 @@
-
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Form.css';
 
 const VolunteerForm = () => {
   const [formData, setFormData] = useState({
     volunteerDate: '',
+    volunteerDay: '',
     volunteerOpportunity: '',
     volunteerSkills: [],
     volunteerAvailability: '',
     volunteerName: '',
     volunteerEmail: '',
   });
+
+  const [showAlert, setShowAlert] = useState(false);
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -25,9 +27,32 @@ const VolunteerForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+  
+    // Display an alert
+    setShowAlert(true);
+  
+    // Optionally, you can reset the form after submission
+    setFormData({
+      volunteerDate: '',
+      volunteerDay: '', // Reset day field
+      volunteerOpportunity: '',
+      volunteerSkills: [],
+      volunteerAvailability: '',
+      volunteerName: '',
+      volunteerEmail: '',
+    });
   };
+  
+  useEffect(() => {
+    // Hide the alert after 5 seconds
+    const timeoutId = setTimeout(() => {
+      setShowAlert(false);
+    }, 5000);
 
+    // Clear the timeout when the component unmounts or showAlert changes
+    return () => clearTimeout(timeoutId);
+  }, [showAlert]);
+  
   return (
     <section id='form'>
     <div className="volunteer-form-container">
@@ -170,6 +195,11 @@ const VolunteerForm = () => {
           </fieldset>
 
           <button className='submitbutton' type="submit">Submit Volunteer Application</button>
+          {showAlert && (
+            <div className="alert-popup">
+              <p>Thank You! For Your Support</p>
+            </div>
+          )}
         </form>
       </div>
       </section>

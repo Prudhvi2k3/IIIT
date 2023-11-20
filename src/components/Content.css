@@ -18,8 +18,8 @@
     max-width: 100%;
     height: auto;
     width: 450px;
-    padding-left: 20px;
     margin-left: -15px;
+    background: linear-gradient(to bottom, #d3f0ea, #a9d8dd, #87bed4, #74a1ca, #7482b8);
   }
   
   /* Adjust layout for medium-sized screens */

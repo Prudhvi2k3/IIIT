@@ -16,11 +16,6 @@ const Footer = () => {
         </div>
         <div className="right-content">
           <span className="social-link">
-            <a href="https://github.com/Prudhvi2k3" target="_blank" rel="noopener noreferrer">
-            <img src={githubLogo} alt="GitHub Logo" className="social-logo" />
-            </a>
-          </span>
-          <span className="social-link">
             <a href="https://www.linkedin.com/in/prudhvi-ankamreddi/" target="_blank" rel="noopener noreferrer">
               <img src={linkedin} alt="LinkedIn Logo" className="social-logo" />
             </a>
@@ -33,6 +28,11 @@ const Footer = () => {
           <span className="social-link">
             <a href="https://www.instagram.com/prudhvi_2k3/" target="_blank" rel="noopener noreferrer">
               <img src={instagramLogo} alt="Instagram Logo" className="insta-logo" />
+            </a>
+          </span>
+          <span className="social-link">
+            <a href="https://github.com/Prudhvi2k3" target="_blank" rel="noopener noreferrer">
+            <img src={githubLogo} alt="GitHub Logo" className="social-logo" />
             </a>
           </span>
         </div>

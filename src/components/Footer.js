@@ -2,7 +2,7 @@
 
 import React from 'react';
 import './Footer.css';
-import githubLogo from '../assets/github.png';
+import twitter from '../assets/twitter.png';
 import linkedin from '../assets/linkedin.png';
 import mailLogo from '../assets/email.png'; 
 import instagramLogo from '../assets/instagram.png';
@@ -31,8 +31,8 @@ const Footer = () => {
             </a>
           </span>
           <span className="social-link">
-            <a href="https://github.com/Prudhvi2k3" target="_blank" rel="noopener noreferrer">
-            <img src={githubLogo} alt="GitHub Logo" className="social-logo" />
+            <a href="https://twitter.com/Prudhvi15042003" target="_blank" rel="noopener noreferrer">
+            <img src={twitter} alt="Twitter Logo" className="twitter-logo" />
             </a>
           </span>
         </div>

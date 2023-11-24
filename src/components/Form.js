@@ -44,10 +44,10 @@ const VolunteerForm = () => {
   };
   
   useEffect(() => {
-    // Hide the alert after 5 seconds
+    // Hide the alert after 3 seconds
     const timeoutId = setTimeout(() => {
       setShowAlert(false);
-    }, 5000);
+    }, 3000);
 
     // Clear the timeout when the component unmounts or showAlert changes
     return () => clearTimeout(timeoutId);
